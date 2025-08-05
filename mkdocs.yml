@@ -1,5 +1,5 @@
-site_name: Archives de la construction moderne
-site_url: https://sitename.example
+site_name: Archives de la construction moderne (Acm)
+# site_url: https://sitename.example
 
 theme:
   name: material
@@ -13,33 +13,56 @@ theme:
 
   features:
     - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - i18n
 
   palette:
     # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark mode
-      primary: green
-      accent: deep purple
+        name: Passer en mode clair
+      primary: indigo
+      accent: red
 
     # Light Mode
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode
+        name: Passer en mode sombre
       primary: blue
-      accent: deep orange
+      accent: red
+
+plugins:
+  - search
+  - privacy
+  - i18n:
+      languages:
+        - locale: fr
+          name: Français
+          build: true
+          default: true
+          nav:
+            - Accueil: index.md
+            - À propos:
+                - Présentation technique: meta/overview.md
+                - Installation initiale: meta/installation.md
+                - Personnalisation visuelle: meta/theme.md
+                - Structuration du contenu: meta/structure.md
+                - Configuration avancée: meta/advanced.md
+                - Publication: meta/publish.md
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home: index.md
+            - About:
+                - Technical overview: meta/overview.md
+                - Installation: meta/installation.md
 
 extra:
-  alternate:
-    - name: Français
-      link: /fr/ 
-      lang: fr
-    - name: English
-      link: /en/
-      lang: en
-
   social:
     - icon: material/web
       link: https://www.epfl.ch/schools/enac/acm/
@@ -64,5 +87,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
+  - sane_lists

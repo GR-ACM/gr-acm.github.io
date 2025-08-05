@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+    </url>
+    <url>
+        <loc>Nonemeta/advanced/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/advanced/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/advanced/"/>
+    </url>
+    <url>
+        <loc>Nonemeta/info/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/info/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/info/"/>
+    </url>
+    <url>
+        <loc>Nonemeta/installation/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/installation/"/>
+    </url>
+    <url>
+        <loc>Nonemeta/publish/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/publish/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/publish/"/>
+    </url>
+    <url>
+        <loc>Nonemeta/structure/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/structure/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/structure/"/>
+    </url>
+    <url>
+        <loc>Nonemeta/theme/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/theme/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/theme/"/>
+    </url>
+    <url>
+        <loc>Noneen/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="None"/>
+    </url>
+    <url>
+        <loc>Noneen/meta/advanced/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/advanced/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/advanced/"/>
+    </url>
+    <url>
+        <loc>Noneen/meta/info/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/info/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/info/"/>
+    </url>
+    <url>
+        <loc>Noneen/meta/installation/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/installation/"/>
+    </url>
+    <url>
+        <loc>Noneen/meta/publish/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/publish/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/publish/"/>
+    </url>
+    <url>
+        <loc>Noneen/meta/structure/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/structure/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/structure/"/>
+    </url>
+    <url>
+        <loc>Noneen/meta/theme/</loc>
+        <lastmod>2025-08-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/theme/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/theme/"/>
+    </url>
+</urlset>
