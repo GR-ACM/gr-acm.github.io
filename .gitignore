@@ -8,9 +8,6 @@ site/
 # Cache généré par des plugins comme `privacy`
 .cache/
 
-# Dossier contenant le fichier de configuration
-mkdocs.yml
-
 # =========================
 # Environnement Python
 # =========================

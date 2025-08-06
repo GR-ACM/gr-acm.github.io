@@ -133,23 +133,22 @@ Félicitations, vous avez déployé votre site!
 
 Une fois vos modifications terminées, déployez à nouveau votre site avec la commande :
 
-```bash
-mkdocs gh-deploy
-```
-
-La nouvelle version est automatiquement publiée sur la branche gh-pages de votre dépôt, et le site est mis à jour.
-
-La commande suivante supprime le dossier `site/` local avant de générer à nouveau le site :
+!!! tip "Optionnel"
+  Si vous avez créé ou modifié votre fichier `.gitignore`, vous devrez supprimer les fichiers de l'index Git. Le fichier `.gitignore` empêche Git de suivre de nouveaux fichiers correspondants, mais n'a aucun effet sur les fichiers déjà suivis.
+  ```bash
+  git rm -r --cached .
+  ```
 
 ```bash
-mkdocs gh-deploy --clean
+git add .
 ```
 
-Cela peut être utile si :
+```bash
+git commit -m "Mise à jour"
+```
 
-- Vous avez supprimé ou renommé des pages
-- Vous souhaitez éviter de conserver d’anciens fichiers obsolètes dans `site/`
+```bash
+git push origin main
+```
 
-!!! info
-    Avec `mkdocs gh-deploy`, cette étape est rarement nécessaire car MkDocs utilise un dossier temporaire pour le déploiement.
-    Utilisez `--clean` uniquement en cas de doute ou de modification importante de la structure.
+La nouvelle version est automatiquement publiée sur la branche `main` et sur la branche `gh-pages` de votre dépôt.
