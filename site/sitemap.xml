@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>None./</loc>
+        <loc>https://gr-acm.github.io/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="None"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/"/>
     </url>
     <url>
-        <loc>Nonemeta/advanced/</loc>
+        <loc>https://gr-acm.github.io/meta/advanced/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/advanced/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/advanced/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/advanced/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/advanced/"/>
     </url>
     <url>
-        <loc>Nonemeta/installation/</loc>
+        <loc>https://gr-acm.github.io/meta/installation/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/installation/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/installation/"/>
     </url>
     <url>
-        <loc>Nonemeta/overview/</loc>
+        <loc>https://gr-acm.github.io/meta/overview/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/overview/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/overview/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/overview/"/>
     </url>
     <url>
-        <loc>Nonemeta/publish/</loc>
+        <loc>https://gr-acm.github.io/meta/publish/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/publish/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/publish/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/publish/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/publish/"/>
     </url>
     <url>
-        <loc>Nonemeta/structure/</loc>
+        <loc>https://gr-acm.github.io/meta/structure/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/structure/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/structure/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/structure/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/structure/"/>
     </url>
     <url>
-        <loc>Nonemeta/theme/</loc>
+        <loc>https://gr-acm.github.io/meta/theme/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/theme/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/theme/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/theme/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/theme/"/>
     </url>
     <url>
-        <loc>Noneen/</loc>
+        <loc>https://gr-acm.github.io/en/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/"/>
     </url>
     <url>
-        <loc>Noneen/meta/advanced/</loc>
+        <loc>https://gr-acm.github.io/en/meta/advanced/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/advanced/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/advanced/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/advanced/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/advanced/"/>
     </url>
     <url>
-        <loc>Noneen/meta/installation/</loc>
+        <loc>https://gr-acm.github.io/en/meta/installation/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/installation/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/installation/"/>
     </url>
     <url>
-        <loc>Noneen/meta/overview/</loc>
+        <loc>https://gr-acm.github.io/en/meta/overview/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/overview/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/overview/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/overview/"/>
     </url>
     <url>
-        <loc>Noneen/meta/publish/</loc>
+        <loc>https://gr-acm.github.io/en/meta/publish/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/publish/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/publish/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/publish/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/publish/"/>
     </url>
     <url>
-        <loc>Noneen/meta/structure/</loc>
+        <loc>https://gr-acm.github.io/en/meta/structure/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/structure/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/structure/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/structure/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/structure/"/>
     </url>
     <url>
-        <loc>Noneen/meta/theme/</loc>
+        <loc>https://gr-acm.github.io/en/meta/theme/</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/meta/theme/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonemeta/theme/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gr-acm.github.io/en/meta/theme/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gr-acm.github.io/meta/theme/"/>
     </url>
 </urlset>
