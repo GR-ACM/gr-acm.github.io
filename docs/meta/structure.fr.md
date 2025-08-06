@@ -1,5 +1,7 @@
 # Structuration du contenu
 
+---
+
 ## Markdown
 
 Ce site est construit avec Material for MkDocs, qui utilise le langage Markdown pour écrire le contenu des pages. Markdown est un langage léger de balisage qui permet de formater du texte de manière simple, lisible et rapide, sans avoir besoin de connaître le HTML.  
@@ -93,7 +95,7 @@ Pour créer une liste à puces, vous pouvez utiliser les symboles `-`, `*` et `+
 
 **Liste ordonnée (numérotée)**
 
-Utilisez des chiffres suivis d’un point (`1.`, `2.`, etc.) pour créer une liste numérotée. Les numéros n’ont pas besoin d’être dans l’ordre (Markdown les renumérote automatiquement), mais la première ligne doit commencer par `1.`  
+Utilisez des chiffres suivis d’un point (`1.`, `2.`, etc.) pour créer une liste numérotée. Les numéros n’ont pas besoin d’être dans l’ordre (Markdown les renumérote automatiquement), mais la première ligne doit commencer par `1.`.  
 Pour une meilleure compatibilité entre les moteurs Markdown, utilisez toujours le point `.` (et non une parenthèse) après les chiffres.
 
 ```markdown
@@ -161,6 +163,10 @@ Vous pouvez également imbriquer plusieurs niveaux de citation.
 > Ceci est une citation.
 >> Citation imbriquée.
 ```
+
+> Ceci est une citation.
+>> Citation imbriquée.
+
 Material for MkDocs propose une alternative aux citations Markdown : les encadrés ou blocs informatifs.
 Elles permettent de structurer visuellement l'information grâce à des icônes, des couleurs, et des types personnalisables (astuce, avertissement, note, etc.).
 

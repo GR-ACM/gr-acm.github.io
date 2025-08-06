@@ -1,8 +1,10 @@
 # Configuration avancée
 
+---
+
 ## Support bilingue
 
-Le site des Archives de la construction moderne (Acm) utilise un système de documentation bilingue français/anglais, mis en œuvre grâce au plugin `mkdocs-static-i18n` pour MkDocs. Ce plugin permet de gérer plusieurs langues au sein d’un même dépôt, tout en conservant une structure de navigation adaptée à chaque langue. [Consultez la documentation officielle ici](https://ultrabug.github.io/mkdocs-static-i18n/getting-started/quick-start/).
+Le wiki des Archives de la construction moderne (Acm) utilise un système de documentation bilingue français/anglais, mis en œuvre grâce au plugin `mkdocs-static-i18n` pour MkDocs. Ce plugin permet de gérer plusieurs langues au sein d’un même dépôt, tout en conservant une structure de navigation adaptée à chaque langue. [Consultez la documentation officielle ici](https://ultrabug.github.io/mkdocs-static-i18n/getting-started/quick-start/).
 
 ### Installation du plugin
 
@@ -16,7 +18,7 @@ Puis activé dans le fichier `mkdocs.yml`:
 
 ```yaml
 features:
-    - i18n
+  - i18n
 
 plugins:
   - i18n
@@ -24,7 +26,7 @@ plugins:
 
 ### Structure et navigation
 
-```bash
+```psql
 docs/
 ├── index.fr.md
 ├── index.en.md

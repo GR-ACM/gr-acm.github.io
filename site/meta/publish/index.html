@@ -251,7 +251,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../info/" class="md-tabs__link">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -372,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../info/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -537,18 +537,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#github" class="md-nav__link">
+  <a href="#prerequis" class="md-nav__link">
     <span class="md-ellipsis">
-      Github
+      Prérequis
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mettre-a-jour" class="md-nav__link">
+  <a href="#fichier-de-configuration-pour-github-actions" class="md-nav__link">
     <span class="md-ellipsis">
-      Mettre à jour
+      Fichier de configuration pour Github Actions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployer-le-site-sur-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déployer le site sur Github Pages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-a-jour-le-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour le site
     </span>
   </a>
   
@@ -597,18 +615,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#github" class="md-nav__link">
+  <a href="#prerequis" class="md-nav__link">
     <span class="md-ellipsis">
-      Github
+      Prérequis
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mettre-a-jour" class="md-nav__link">
+  <a href="#fichier-de-configuration-pour-github-actions" class="md-nav__link">
     <span class="md-ellipsis">
-      Mettre à jour
+      Fichier de configuration pour Github Actions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployer-le-site-sur-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déployer le site sur Github Pages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-a-jour-le-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mettre à jour le site
     </span>
   </a>
   
@@ -631,7 +667,19 @@
 
 
 <h1 id="publier-le-site">Publier le site</h1>
-<h2 id="github">Github</h2>
+<p>Après avoir créé et personnalisé votre site en local, vous pouvez le mettre en ligne gratuitement avec GitHub Pages. Cette section vous explique comment faire la première publication, puis comment le mettre à jour facilement par la suite.</p>
+<hr />
+<h2 id="prerequis">Prérequis</h2>
+<p>Assurez-vous d’avoir :</p>
+<ul>
+<li><a href="http://github.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Un compte GitHub</a></li>
+<li><a href="http://github.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Un dépôt public ou privé</a> (ex. : <code>nom-utilisateur/mon-wiki</code>)</li>
+<li><a href="../installation/#initialiser-un-nouveau-site-mkdocs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.029 18.772.777 1.166-5.417 2.709L0 16.451V4.063l5.417-2.709 5.298 7.948 7.867-5.24L24 1.354V16.84l-5.417 2.709zm2.023-13.827v13.253l3.949-1.975V2.97zM5.076 2.642 1.458 4.45 12.73 21.358l3.618-1.809z"/></svg></span> Un projet MkDocs fonctionnel avec un fichier <code>mkdocs.yml</code></a></li>
+<li><a href="../installation/#activer-lenvironnement-virtuel"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span> Activé l’environnement virtuel Python (venv)</a>, si ce n’est pas déjà fait.</li>
+</ul>
+<hr />
+<h2 id="fichier-de-configuration-pour-github-actions">Fichier de configuration pour Github Actions</h2>
+<p>Dans un dossier <code>.github/workflows/</code>, créez un fichier nommé <code>ci.yml</code> :</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"> </span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">on</span><span class="p">:</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
@@ -662,9 +710,74 @@
 </span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"> </span>
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
 </span></code></pre></div>
-<h2 id="mettre-a-jour">Mettre à jour</h2>
-<p>mkdocs build</p>
-<p>mkdocs gh-deploy --clean</p>
+<hr />
+<h2 id="deployer-le-site-sur-github-pages">Déployer le site sur Github Pages</h2>
+<p>Si nécessaire, arrêtez le serveur en appuyant dans le terminal :</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Appuyer simultanément sur <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span></p>
+</div>
+<div class="tabbed-block">
+<p>Appuyer simultanément sur <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-c">C</kbd></span></p>
+</div>
+</div>
+</div>
+<p>Initialisez un dépôt Git dans le dossier du projet à l'aide de cette commande, dans le terminal :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>init
+</span></code></pre></div>
+<p>Optionnellement, vous pouvez ajouter un fichier <code>.gitignore</code> à la racine de votre projet.<br />
+Le fichier <code>.gitignore</code> est un fichier spécial utilisé par Git pour lui dire quels fichiers ou dossiers il ne doit pas pousser sur GitHub.</p>
+<p>Ajoutez tous les fichiers modifiés ou nouveaux du dossier courant et de ses sous-dossiers à la zone de préparation avec la commande :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span></code></pre></div>
+<p>Optionnellement, vous pouvez contrôler ce que vous venez d'ajouter au prochain commit avec la commande :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>status
+</span></code></pre></div>
+<p>Vous pouvez maintenant lancer le commit avec la commande (<code>-m "..."</code> détermine le message d'accompagnement) :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
+</span></code></pre></div>
+<p>Entrez la commande suivante, avec l'adresse de votre dépôt Github. Vous pouvez la copier directement depuis la page de votre dépôt.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>git#@github.com:nom-utilisateur/mon-wiki.git
+</span></code></pre></div>
+<p>Vous pouvez maintenant pousser vos fichiers vers le dépôt :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</span></code></pre></div>
+<p>À partir de la page de votre dépôt :  </p>
+<ul>
+<li>Cliquez sur <em>Settings</em> &gt; <em>Pages</em></li>
+<li>
+<p>Sous <em>Build and deployment</em> :</p>
+<ul>
+<li>Source: <code>Deploy from a branch</code></li>
+<li>Branch: <code>gh-pages</code></li>
+</ul>
+</li>
+<li>
+<p>Cliquez sur <code>Save</code>.</p>
+</li>
+</ul>
+<p>Dans <code>Actions</code>, un nouveau workflow est apparu pour le déploiement de votre site. Lorsque votre site sera déployé, une adresse <code>https://nom-utilisateur.github.io/mon-wiki</code> apparaîtra. Cette action peut prendre quelques minutes.</p>
+<p>Félicitations, vous avez déployé votre site!</p>
+<hr />
+<h2 id="mettre-a-jour-le-site">Mettre à jour le site</h2>
+<p>Une fois vos modifications terminées, déployez à nouveau votre site avec la commande :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>mkdocs<span class="w"> </span>gh-deploy
+</span></code></pre></div>
+<p>La nouvelle version est automatiquement publiée sur la branche gh-pages de votre dépôt, et le site est mis à jour.</p>
+<p>La commande suivante supprime le dossier <code>site/</code> local avant de générer à nouveau le site :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>mkdocs<span class="w"> </span>gh-deploy<span class="w"> </span>--clean
+</span></code></pre></div>
+<p>Cela peut être utile si :</p>
+<ul>
+<li>Vous avez supprimé ou renommé des pages</li>
+<li>Vous souhaitez éviter de conserver d’anciens fichiers obsolètes dans <code>site/</code></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Avec <code>mkdocs gh-deploy</code>, cette étape est rarement nécessaire car MkDocs utilise un dossier temporaire pour le déploiement.
+Utilisez <code>--clean</code> uniquement en cas de doute ou de modification importante de la structure.</p>
+</div>
 
 
 

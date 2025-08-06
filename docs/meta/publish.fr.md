@@ -2,13 +2,18 @@
 
 Après avoir créé et personnalisé votre site en local, vous pouvez le mettre en ligne gratuitement avec GitHub Pages. Cette section vous explique comment faire la première publication, puis comment le mettre à jour facilement par la suite.
 
+---
+
 ## Prérequis
 
 Assurez-vous d’avoir :
 
-- Un compte GitHub
-- Créé un dépôt public ou privé (ex. : `nom-utilisateur/mon-wiki`)
-- Un projet MkDocs fonctionnel avec un fichier `mkdocs.yml`
+- [:simple-github: Un compte GitHub](http://github.com/)
+- [:simple-github: Un dépôt public ou privé](http://github.com/) (ex. : `nom-utilisateur/mon-wiki`)
+- [:simple-materialformkdocs: Un projet MkDocs fonctionnel avec un fichier `mkdocs.yml`](../installation/#initialiser-un-nouveau-site-mkdocs)
+- [:simple-python: Activé l’environnement virtuel Python (venv)](../installation/#activer-lenvironnement-virtuel), si ce n’est pas déjà fait.
+
+---
 
 ## Fichier de configuration pour Github Actions
 
@@ -45,6 +50,8 @@ jobs:
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
 ```
+
+---
 
 ## Déployer le site sur Github Pages
 
@@ -94,6 +101,7 @@ Vous pouvez maintenant pousser vos fichiers vers le dépôt :
 ```bash
 git push origin main
 ```
+
 À partir de la page de votre dépôt :  
 
 - Cliquez sur *Settings* > *Pages*
@@ -108,8 +116,29 @@ Dans `Actions`, un nouveau workflow est apparu pour le déploiement de votre sit
 
 Félicitations, vous avez déployé votre site!
 
-## Mettre à jour
+---
 
-mkdocs build
+## Mettre à jour le site
 
+Une fois vos modifications terminées, déployez à nouveau votre site avec la commande :
+
+```bash
+mkdocs gh-deploy
+```
+
+La nouvelle version est automatiquement publiée sur la branche gh-pages de votre dépôt, et le site est mis à jour.
+
+La commande suivante supprime le dossier `site/` local avant de générer à nouveau le site :
+
+```bash
 mkdocs gh-deploy --clean
+```
+
+Cela peut être utile si :
+
+- Vous avez supprimé ou renommé des pages
+- Vous souhaitez éviter de conserver d’anciens fichiers obsolètes dans `site/`
+
+!!! info
+    Avec `mkdocs gh-deploy`, cette étape est rarement nécessaire car MkDocs utilise un dossier temporaire pour le déploiement.
+    Utilisez `--clean` uniquement en cas de doute ou de modification importante de la structure.

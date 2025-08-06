@@ -1,8 +1,10 @@
+# Welcome to the Archives de la construction moderne Wiki
 
-<!-- docs/en/index.md -->
-# Welcome to the Archives de la construction moderne wiki
+This is a technical documentation space designed to centralize the knowledge, procedures, and tools used at the Archives de la construction moderne.
 
-This is knowledge base.
+To learn how this site was created or how to build a similar one, see the [About the wiki](../en/meta/overview/) section.
+
+---
 
 ## Archives de la construction moderne
 

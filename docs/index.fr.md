@@ -1,7 +1,10 @@
-<!-- docs/fr/index.md -->
 # Bienvenue sur le wiki des Archives de la construction moderne
 
-Ceci est un centre de partage.
+Ceci est un espace de documentation technique pour centraliser les connaissances, procédures et outils des Archives de la construction moderne.
+
+Pour savoir comment ce site a été créé ou apprendre à en créer un similaire, consultez la section [À propos du wiki](../meta/overview/).
+
+---
 
 ## Archives de la construction moderne
 

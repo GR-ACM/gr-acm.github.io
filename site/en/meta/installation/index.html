@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../info/">
+        <link rel="prev" href="../overview/">
       
+      
+        <link rel="next" href="../theme/">
       
       
       <link rel="icon" href="../../../assets/epfl.svg">
@@ -251,7 +253,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../info/" class="md-tabs__link">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -372,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../info/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -454,13 +456,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#initial-setup" class="md-nav__link">
+  <a href="#initial-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Initial Setup
+      Initial installation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Initial Setup">
+    <nav class="md-nav" aria-label="Initial installation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -482,9 +484,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-material-for-mkdocs-using-pip" class="md-nav__link">
+  <a href="#install-material-for-mkdocs-with-pip" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Material for MkDocs using pip
+      Install Material for MkDocs with pip
     </span>
   </a>
   
@@ -509,9 +511,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-the-site-with-mkdocsyml" class="md-nav__link">
+  <a href="#configure-the-site-in-mkdocsyml" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure the site with mkdocs.yml
+      Configure the site in mkdocs.yml
     </span>
   </a>
   
@@ -534,7 +536,16 @@
         <li class="md-nav__item">
   <a href="#yaml-schema-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      YAML Schema Validation
+      YAML schema validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
     </span>
   </a>
   
@@ -544,6 +555,98 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual customization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structuring content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../publish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Publishing
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -592,13 +695,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#initial-setup" class="md-nav__link">
+  <a href="#initial-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Initial Setup
+      Initial installation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Initial Setup">
+    <nav class="md-nav" aria-label="Initial installation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -620,9 +723,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-material-for-mkdocs-using-pip" class="md-nav__link">
+  <a href="#install-material-for-mkdocs-with-pip" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Material for MkDocs using pip
+      Install Material for MkDocs with pip
     </span>
   </a>
   
@@ -647,9 +750,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-the-site-with-mkdocsyml" class="md-nav__link">
+  <a href="#configure-the-site-in-mkdocsyml" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure the site with mkdocs.yml
+      Configure the site in mkdocs.yml
     </span>
   </a>
   
@@ -672,7 +775,16 @@
         <li class="md-nav__item">
   <a href="#yaml-schema-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      YAML Schema Validation
+      YAML schema validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
     </span>
   </a>
   
@@ -695,85 +807,97 @@
 
 
 <h1 id="installation">Installation</h1>
-<p>This documentation describes how this wiki was deployed. Its purpose is to document the technical steps followed during its creation, while also providing a reproducible guide for those who wish to build a similar site.</p>
-<p>This guide is based directly on the <a href="https://squidfunk.github.io/mkdocs-material/getting-started/">official Material for MkDocs documentation</a>, and is a condensed, simplified version tailored to the context of this project.</p>
+<p>This wiki was created using Material for MkDocs. It is hosted on GitHub Pages.</p>
+<p>This documentation describes how this wiki was deployed. Its goal is to document the technical steps taken during its creation while providing a reproducible guide for anyone wishing to build a similar site.</p>
+<p>This guide is based directly on the <a href="https://squidfunk.github.io/mkdocs-material/getting-started/">official Material for MkDocs documentation</a>, and serves as a simplified, condensed version adapted to this project's context.</p>
 <hr />
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before starting the installation, make sure you have the following tools available:</p>
+<p>Before beginning the installation, make sure you have the following tools:</p>
 <ul>
 <li>
-<p><a href="https://www.python.org/downloads/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span> Python</a>, a simple, readable, and widely used programming language. We recommend version 3.4 or later for this guide.</p>
+<p><a href="https://www.python.org/downloads/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span> Python</a>, a simple, readable, and widely used programming language. We recommend version 3.4 or newer for this guide.</p>
 <ul>
-<li><a href="https://pip.pypa.io/en/stable/installation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14 7.5A2.86 2.86 0 0 1 22 10.36v3.78A2.86 2.86 0 0 1 19.14 17H12c0 .39.32.96.71.96H17v1.68a2.86 2.86 0 0 1-2.86 2.86H9.86A2.86 2.86 0 0 1 7 19.64v-3.75a2.85 2.85 0 0 1 2.86-2.85h5.25a2.85 2.85 0 0 0 2.85-2.86V7.5zm-4.28 11.79c-.4 0-.72.3-.72.89s.32.71.72.71a.71.71 0 0 0 .71-.71c0-.59-.32-.89-.71-.89m-10-1.79A2.86 2.86 0 0 1 2 14.64v-3.78A2.86 2.86 0 0 1 4.86 8H12c0-.39-.32-.96-.71-.96H7V5.36A2.86 2.86 0 0 1 9.86 2.5h4.28A2.86 2.86 0 0 1 17 5.36v3.75a2.85 2.85 0 0 1-2.86 2.85H8.89a2.85 2.85 0 0 0-2.85 2.86v2.68zM9.14 5.71c.4 0 .72-.3.72-.89s-.32-.71-.72-.71c-.39 0-.71.12-.71.71s.32.89.71.89"/></svg></span> pip</a>, Python's package manager. It allows you to install libraries and tools. It is included by default with Python 3.4 and later.</li>
+<li><a href="https://pip.pypa.io/en/stable/installation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14 7.5A2.86 2.86 0 0 1 22 10.36v3.78A2.86 2.86 0 0 1 19.14 17H12c0 .39.32.96.71.96H17v1.68a2.86 2.86 0 0 1-2.86 2.86H9.86A2.86 2.86 0 0 1 7 19.64v-3.75a2.85 2.85 0 0 1 2.86-2.85h5.25a2.85 2.85 0 0 0 2.85-2.86V7.5zm-4.28 11.79c-.4 0-.72.3-.72.89s.32.71.72.71a.71.71 0 0 0 .71-.71c0-.59-.32-.89-.71-.89m-10-1.79A2.86 2.86 0 0 1 2 14.64v-3.78A2.86 2.86 0 0 1 4.86 8H12c0-.39-.32-.96-.71-.96H7V5.36A2.86 2.86 0 0 1 9.86 2.5h4.28A2.86 2.86 0 0 1 17 5.36v3.75a2.85 2.85 0 0 1-2.86 2.85H8.89a2.85 2.85 0 0 0-2.85 2.86v2.68zM9.14 5.71c.4 0 .72-.3.72-.89s-.32-.71-.72-.71c-.39 0-.71.12-.71.71s.32.89.71.89"/></svg></span> pip</a>, Python’s package manager. It is used to install libraries and tools, and is included by default with Python 3.4+.</li>
 </ul>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0zm192 0v128h128zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg></span> A code editor. We recommend <a href="https://vscodium.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.583.54a1.467 1.467 0 0 0-.441 2.032c2.426 3.758 2.999 6.592 2.75 9.075-1.004 4.756-3.187 5.721-5.094 5.721-1.863 0-1.364-3.065.036-3.962.836-.522 1.906-.861 2.728-.861.814 0 1.474-.658 1.474-1.47s-.66-1.47-1.474-1.47c-.96 0-1.901.202-2.78.545.18-.847.246-1.762.014-2.735-.352-1.477-1.367-2.889-3.128-4.257a1.476 1.476 0 0 0-2.069.256c-.5.64-.384 1.564.259 2.063 1.435 1.114 1.908 1.939 2.07 2.618s.032 1.407-.293 2.408c-.416 1.349-.9 2.553-1.11 3.708-.105.568-.114 1.187-.14 1.68-1.034-1.006-1.438-2.336-1.438-4.279 0-.811-.66-1.47-1.474-1.47A1.47 1.47 0 0 0 0 11.612c0 2.654.776 5.179 2.855 6.863 1.883 1.793 6.67 1.13 6.67 4.01 0 .812 1.19 1.208 2.004 1.208.834 0 1.885-.558 1.885-1.208 0-3.267 3.443-5.253 9.11-5.244A1.47 1.47 0 0 0 24 15.773a1.47 1.47 0 0 0-1.47-1.473q-.58.001-1.138.035c.634-1.49.915-3.13.857-4.903a1.473 1.473 0 0 0-1.522-1.42 1.47 1.47 0 0 0-1.425 1.517c.076 2.32-.01 4.393-1.74 5.485-.49.31-1.062.58-1.604.58.42-1.145.738-2.353.869-3.655.083-.83.091-1.818-.003-2.585-.148-1.188-.325-2.535.126-3.55.405-.874 1.313-1.24 2.645-1.24.814 0 1.473-.659 1.473-1.47s-.659-1.47-1.473-1.47c-1.98 0-3.481 1.042-4.332 2.3A25 25 0 0 0 13.621.981a1.474 1.474 0 0 0-2.037-.44z"/></svg></span> VSCodium</a>, an open-source alternative to <a href="https://code.visualstudio.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> Visual Studio Code</a>.</p>
 </li>
 <li>
-<p><a href="http://github.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> A GitHub account</a>, since we’ll be deploying the site via <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+<p><a href="http://github.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> A GitHub account</a>, since we’ll deploy the site using the <a href="https://pages.github.com/">GitHub Pages</a> service.</p>
 </li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Once installed, you can check if Python works by opening a terminal and typing:</p>
+<p>Once installed, you can check if Python is working by opening a terminal and typing:</p>
 <div class="language-text highlight"><pre><span></span><code>python --version
 </code></pre></div>
-<p>To check if <code>pip</code> works:</p>
+<p>To check if <code>pip</code> is working:</p>
 <div class="language-text highlight"><pre><span></span><code>pip --version
 </code></pre></div>
 </div>
 <hr />
-<h2 id="initial-setup">Initial Setup</h2>
-<p>Open a terminal in the folder where you want to create the project:</p>
-<ul>
-<li>On <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.83 4c.49 0 .8.4.67.89l-3.16 14.22c-.11.49-.59.89-1.08.89H2.17c-.49 0-.8-.4-.67-.89L4.66 4.89C4.77 4.4 5.25 4 5.74 4zm-6 12h-4c-.46 0-.83.38-.83.84 0 .47.37.85.83.85h4c.47 0 .85-.38.85-.85 0-.46-.38-.84-.85-.84m-10.05.28a.87.87 0 0 0-.21 1.22c.28.42.84.5 1.24.23 7.35-5.17 7.4-5.23 7.45-5.26.18-.16.27-.38.28-.6.01-.2-.04-.37-.16-.56L9.46 6.03A.867.867 0 0 0 8.21 6c-.36.32-.38.88-.05 1.24l4.15 4.44z"/></svg></span> Powershell</li>
-<li>On <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> macOS: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg></span> Terminal</li>
-</ul>
-<p>The terminal runs commands within a specific folder. It's important to navigate to the folder where you want to create your wiki.<br />
-The <code>cd</code> command (“change directory”) lets you move through the folder structure from the terminal.</p>
+<h2 id="initial-installation">Initial installation</h2>
+<p>Open a terminal in the folder where you want to create your project:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Open <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.83 4c.49 0 .8.4.67.89l-3.16 14.22c-.11.49-.59.89-1.08.89H2.17c-.49 0-.8-.4-.67-.89L4.66 4.89C4.77 4.4 5.25 4 5.74 4zm-6 12h-4c-.46 0-.83.38-.83.84 0 .47.37.85.83.85h4c.47 0 .85-.38.85-.85 0-.46-.38-.84-.85-.84m-10.05.28a.87.87 0 0 0-.21 1.22c.28.42.84.5 1.24.23 7.35-5.17 7.4-5.23 7.45-5.26.18-.16.27-.38.28-.6.01-.2-.04-.37-.16-.56L9.46 6.03A.867.867 0 0 0 8.21 6c-.36.32-.38.88-.05 1.24l4.15 4.44z"/></svg></span> Powershell</p>
+</div>
+<div class="tabbed-block">
+<p>Open <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg></span> Terminal</p>
+</div>
+</div>
+</div>
+<p>The terminal runs commands inside a specific folder. It’s important to navigate to the folder where you want to create your wiki.<br />
+The <code>cd</code> ("change directory") command lets you move through your file structure from the terminal.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>path/to/my/folder
 </span></code></pre></div>
 <div class="admonition tip">
-<p class="admonition-title">Run commands directly from the editor</p>
-<p>Visual Studio Code and VSCodium include an integrated terminal, which allows you to continue typing commands directly from within the editor.<br />
-Go to the <strong>Terminal</strong> menu &gt; <strong>New Terminal</strong>, or use the keyboard shortcut.</p>
+<p class="admonition-title">Run commands from the editor</p>
+<p>Visual Studio Code and VSCodium include an integrated terminal, allowing you to continue running commands directly from the editor. Go to the <strong>Terminal</strong> menu &gt; <strong>New Terminal</strong>, or use the shortcut.</p>
 </div>
 <h3 id="create-a-python-virtual-environment">Create a Python virtual environment</h3>
 <div class="admonition note inline end">
 <p class="admonition-title">What does this command mean?</p>
-<p><code>-m venv</code> uses the built-in venv module, which is used to create virtual environments.
-<code>venv</code> is the name of the folder that will be created in your project (you can choose another name, but <code>venv</code> is a common convention).</p>
+<p><code>-m venv</code> uses Python’s built-in venv module to create virtual environments.
+<code>venv</code> is the name of the folder that will be created in your project (you can change it, but <code>venv</code> is a common convention).</p>
 </div>
 <p>In the terminal, type the following command:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
 </span></code></pre></div>
 <h3 id="activate-the-virtual-environment">Activate the virtual environment</h3>
-<ul>
-<li>On <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows: .\venv\Scripts\activate</li>
-<li>On <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> macOS: source venv/bin/activate</li>
-</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Type <code>.\venv\Scripts\activate</code></p>
+</div>
+<div class="tabbed-block">
+<p>Type <code>source venv/bin/activate</code></p>
+</div>
+</div>
+</div>
 <div class="admonition success">
 <p class="admonition-title">Activation</p>
-<p>If everything works correctly, you’ll see the environment name <code>(venv)</code> appear at the beginning of your command prompt.</p>
+<p>If successful, you’ll see the environment name <code>(venv)</code> appear at the start of your command line.</p>
 </div>
-<p>If you close the terminal, you’ll need to reactivate the environment next time using the same command as above.</p>
-<h3 id="install-material-for-mkdocs-using-pip">Install Material for MkDocs using <code>pip</code></h3>
+<p>Each time you close the terminal, you’ll need to reactivate the environment with the same command as above.</p>
+<h3 id="install-material-for-mkdocs-with-pip">Install Material for MkDocs with <code>pip</code></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
 </span></code></pre></div>
-<p>This command installs MkDocs, Material for MkDocs, and all the necessary dependencies.</p>
-<p>After installation, you can check that MkDocs is available by typing <code>mkdocs --version</code>.</p>
+<p>This command installs MkDocs, Material for MkDocs, and all required dependencies.</p>
+<p>After installation, you can verify that MkDocs is available by typing <code>mkdocs --version</code>.</p>
 <h3 id="open-the-project-folder-in-visual-studio-code-or-vscodium">Open the project folder in Visual Studio Code or VSCodium</h3>
 <div class="admonition note inline end">
 <p class="admonition-title">What does this command mean?</p>
-<p><code>code</code> calls the Visual Studio Code / VSCodium application,
-<code>.</code> means "current folder".</p>
+<p><code>code</code> launches Visual Studio Code / VSCodium.
+<code>.</code> means “the current folder”.</p>
 </div>
-<p>You can use the following command in your terminal (while inside the correct folder):</p>
+<p>You can use the following command in your terminal (from the correct folder):</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>code<span class="w"> </span>.
 </span></code></pre></div>
 <h3 id="initialize-a-new-mkdocs-site">Initialize a new MkDocs site</h3>
-<p>In the terminal (with the virtual environment still activated), type the following command:</p>
+<p>In the terminal (with the virtual environment still active), type:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>.
 </span></code></pre></div>
 <p>The following structure should be created:</p>
@@ -784,44 +908,52 @@ Go to the <strong>Terminal</strong> menu &gt; <strong>New Terminal</strong>, or 
 </span></code></pre></div>
 <p>This command creates two important elements:</p>
 <ul>
-<li><code>docs/index.md</code>: the home page of the site, written in Markdown. You can edit it freely.</li>
-<li><code>mkdocs.yml</code>: a configuration file written in YAML (site title, theme, navigation, languages, etc.).</li>
+<li><code>docs/index.md</code>: the site’s homepage. Written in Markdown, you can edit it freely.</li>
+<li><code>mkdocs.yml</code>: the configuration file, written in YAML (for title, theme, navigation, languages, etc.).</li>
 </ul>
-<p>To add a new page to your site, simply create a new <code>.md</code> file in the <code>docs/</code> folder.
-For example, creating a file named <code>about.md</code> in <code>docs/</code> will make it available at https://mysite/about/.</p>
+<p>To add a new page to your site, simply create a <code>.md</code> file in the <code>docs/</code> folder.
+For example, if you create a file called <code>about.md</code>, it will be available at https://my-site/about/.</p>
 <div class="admonition note">
-<p class="admonition-title">Need a refresher on how to write in Markdown?</p>
-<p>See our Markdown syntax guide for the basics.</p>
+<p class="admonition-title">Need a Markdown syntax refresher?</p>
+<p>Check out our <a href="../structure/#markdown">Markdown syntax guide</a> for the basics.</p>
 </div>
-<h3 id="configure-the-site-with-mkdocsyml">Configure the site with <code>mkdocs.yml</code></h3>
+<h3 id="configure-the-site-in-mkdocsyml">Configure the site in <code>mkdocs.yml</code></h3>
 <p>Open <code>mkdocs.yml</code> in your editor and replace its content with the following configuration:</p>
-<div class="language-text highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>site_name: My project documentation
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>site_url: https://mysite.exemple
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>theme:
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  name: material
+<div class="language-yaml highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My project</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://my-site.example</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
 </span></code></pre></div>
+<hr />
 <h2 id="preview-the-site-locally">Preview the site locally</h2>
-<p>Now that your site is configured, you can generate and preview it locally in real time as you work on it.</p>
+<p>Now that your site is configured, you can build and preview it live while you work.</p>
 <p>In the terminal (with the virtual environment activated), type:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>mkdocs<span class="w"> </span>serve
 </span></code></pre></div>
 <p>Open a browser and go to: <a href="http://localhost:8000/">http://localhost:8000/</a></p>
 <div class="admonition tip">
-<p class="admonition-title">Preview your changes in real time</p>
-<p>As long as the <code>mkdocs serve</code> command is running in your terminal, the site stays visible and updates automatically with each save.</p>
+<p class="admonition-title">Live preview your changes</p>
+<p>As long as <code>mkdocs serve</code> is running, the site remains visible and updates automatically when you save changes.</p>
 </div>
-<p>When you're done, you can stop the server in the terminal by pressing:</p>
-<ul>
-<li>On <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows : <code>Ctrl + C</code></li>
-<li>On <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> macOS : <code>Cmd + C</code></li>
-</ul>
-<h2 id="yaml-schema-validation">YAML Schema Validation</h2>
+<p>When you're done, stop the server by pressing the following in the terminal:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span></p>
+</div>
+<div class="tabbed-block">
+<p>Press <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-c">C</kbd></span></p>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="yaml-schema-validation">YAML schema validation</h2>
 <div class="admonition tip">
-<p>The <code>mkdocs.yml</code> file is central to configuring your site. To avoid syntax or structural errors (which could block site generation), it’s strongly recommended to enable automatic YAML schema validation in your code editor.</p>
+<p>The <code>mkdocs.yml</code> file is central to your site's configuration. To avoid syntax or structure errors (which may prevent the site from building), we strongly recommend enabling automatic YAML schema validation in your code editor.</p>
 </div>
-<p>For Visual Studio Code and VSCodium, search for <em>YAML</em> in the Extensions panel and install the official YAML extension by Red Hat.</p>
-<p>Look for the <code>settings.json</code> file in your editor’s settings, or create one at the root of the project.</p>
-<p>Add the following code to that file:</p>
+<p>In Visual Studio Code or VSCodium, search for YAML in the Extensions panel and install the official YAML extension by Red Hat.</p>
+<p>Look for the <code>settings.json</code> file in the settings panel or create one at the root of your project.</p>
+<p>Add the following code to the file:</p>
 <div class="language-json highlight"><span class="filename">settings.json</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">&quot;yaml.schemas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="nt">&quot;https://squidfunk.github.io/mkdocs-material/schema.json&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mkdocs.yml&quot;</span>
@@ -837,6 +969,10 @@ For example, creating a file named <code>about.md</code> in <code>docs/</code> w
 </span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">  </span><span class="p">]</span>
 </span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="p">}</span>
 </span></code></pre></div>
+<hr />
+<h2 id="deployment">Deployment</h2>
+<p>Once your site is created and customized locally, you can publish it for free using GitHub Pages.
+See the <a href="../publish">Publishing section</a> to learn how to deploy your site for the first time, and how to update it easily afterward.</p>
 
 
 
@@ -866,7 +1002,7 @@ For example, creating a file named <code>about.md</code> in <code>docs/</code> w
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../info/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Technical overview">
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Technical overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -881,6 +1017,22 @@ For example, creating a file named <code>about.md</code> in <code>docs/</code> w
             </div>
           </a>
         
+        
+          
+          <a href="../theme/" class="md-footer__link md-footer__link--next" aria-label="Next: Visual customization">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Visual customization
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

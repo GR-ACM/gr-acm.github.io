@@ -1,5 +1,5 @@
 site_name: Archives de la construction moderne (Acm)
-# site_url: https://sitename.example
+site_url: https://gr-acm.github.io
 
 theme:
   name: material
@@ -61,6 +61,10 @@ plugins:
             - About:
                 - Technical overview: meta/overview.md
                 - Installation: meta/installation.md
+                - Visual customization: meta/theme.md
+                - Structuring content: meta/structure.md
+                - Advanced configuration: meta/advanced.md
+                - Publishing: meta/publish.md
 
 extra:
   social:

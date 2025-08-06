@@ -253,7 +253,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../info/" class="md-tabs__link">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -374,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../info/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -526,9 +526,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#plugin" class="md-nav__link">
+  <a href="#installation-du-plugin" class="md-nav__link">
     <span class="md-ellipsis">
-      Plugin
+      Installation du plugin
     </span>
   </a>
   
@@ -538,15 +538,6 @@
   <a href="#structure-et-navigation" class="md-nav__link">
     <span class="md-ellipsis">
       Structure et navigation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retablir-la-barre-de-recherche" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rétablir la barre de recherche
     </span>
   </a>
   
@@ -633,9 +624,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#plugin" class="md-nav__link">
+  <a href="#installation-du-plugin" class="md-nav__link">
     <span class="md-ellipsis">
-      Plugin
+      Installation du plugin
     </span>
   </a>
   
@@ -645,15 +636,6 @@
   <a href="#structure-et-navigation" class="md-nav__link">
     <span class="md-ellipsis">
       Structure et navigation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retablir-la-barre-de-recherche" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rétablir la barre de recherche
     </span>
   </a>
   
@@ -681,10 +663,82 @@
 
 
 <h1 id="configuration-avancee">Configuration avancée</h1>
+<hr />
 <h2 id="support-bilingue">Support bilingue</h2>
-<h3 id="plugin">Plugin</h3>
+<p>Le wiki des Archives de la construction moderne (Acm) utilise un système de documentation bilingue français/anglais, mis en œuvre grâce au plugin <code>mkdocs-static-i18n</code> pour MkDocs. Ce plugin permet de gérer plusieurs langues au sein d’un même dépôt, tout en conservant une structure de navigation adaptée à chaque langue. <a href="https://ultrabug.github.io/mkdocs-static-i18n/getting-started/quick-start/">Consultez la documentation officielle ici</a>.</p>
+<h3 id="installation-du-plugin">Installation du plugin</h3>
+<p>Dans l’environnement Python utilisé pour générer le site, le plugin <code>mkdocs-static-i18n</code> doit être installé :</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-static-i18n
+</span></code></pre></div>
+<p>Puis activé dans le fichier <code>mkdocs.yml</code>:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">features</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">i18n</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nt">plugins</span><span class="p">:</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">i18n</span>
+</span></code></pre></div>
 <h3 id="structure-et-navigation">Structure et navigation</h3>
-<h3 id="retablir-la-barre-de-recherche">Rétablir la barre de recherche</h3>
+<div class="language-psql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">docs</span><span class="o">/</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="err">├──</span><span class="w"> </span><span class="k">index</span><span class="mf">.</span><span class="n">fr</span><span class="mf">.</span><span class="n">md</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="err">├──</span><span class="w"> </span><span class="k">index</span><span class="mf">.</span><span class="n">en</span><span class="mf">.</span><span class="n">md</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="err">└──</span><span class="w"> </span><span class="n">wiki</span><span class="o">/</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">overview</span><span class="mf">.</span><span class="n">fr</span><span class="mf">.</span><span class="n">md</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">overview</span><span class="mf">.</span><span class="n">en</span><span class="mf">.</span><span class="n">md</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">installation</span><span class="mf">.</span><span class="n">fr</span><span class="mf">.</span><span class="n">md</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="n">installation</span><span class="mf">.</span><span class="n">en</span><span class="mf">.</span><span class="n">md</span>
+</span></code></pre></div>
+<p>Dans cette configuration, les fichiers sont nommés avec des suffixes de langue (<code>.fr.md</code>, <code>.en.md</code>, etc.) et placés directement dans le dossier <code>docs/</code>. Le plugin identifie les fichiers en fonction de leur suffixe de langue et il n'est pas nécessaire d'inclure le suffixe dans <code>nav:</code>.</p>
+<p>La barre de recherche peut disparaître, le plugin search doit être déclaré explicitement.</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">plugins</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">privacy</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">i18n</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="nt">languages</span><span class="p">:</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">locale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fr</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Français</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">          </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">          </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">          </span><span class="nt">nav</span><span class="p">:</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Accueil</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">À propos</span><span class="p">:</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Présentation technique</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wiki/overview.md</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Installation initiale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wiki/installation.md</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">locale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">          </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">          </span><span class="nt">nav</span><span class="p">:</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">About</span><span class="p">:</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Technical overview</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wiki/overview.md</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Installation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wiki/installation.md</span>
+</span></code></pre></div>
+<p>Dans cet exemple, le français est défini comme langue par défaut.<br />
+L’URL racine du site, <code>https://mon-site/</code>, affiche automatiquement la version française.
+Cette URL correspond au fichier <code>docs/index.fr.md</code>, qui devient la page d’accueil.<br />
+L’URL <code>https://mon-site/en/</code> affiche la version anglaise du site.
+Cette URL correspond au fichier <code>docs/index.en.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Fichier source utilisé</th>
+<th>Langue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>https://mon-site/</code></td>
+<td><code>docs/index.fr.md</code></td>
+<td><img alt="🇫🇷" class="twemoji" src="../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f1eb-1f1f7.svg" title=":flag_fr:"> Français (défaut)</td>
+</tr>
+<tr>
+<td><code>https://mon-site/en/</code></td>
+<td><code>docs/index.en.md</code></td>
+<td><img alt="🇬🇧" class="twemoji" src="../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f1ec-1f1e7.svg" title=":flag_gb:"> Anglais</td>
+</tr>
+</tbody>
+</table>
 
 
 

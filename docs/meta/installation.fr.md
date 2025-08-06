@@ -1,5 +1,7 @@
 # Installation
 
+Ce wiki a été créé à l’aide de Material for MkDocs. Il est hébergé sur GitHub Pages.
+
 Cette documentation décrit la manière dont ce wiki a été déployé. Elle a pour objectif de documenter les étapes techniques suivies lors de sa création, tout en fournissant un guide reproductible pour celles et ceux qui souhaiteraient construire un site similaire.
 
 Ce guide s’appuie directement sur la [documentation officielle de Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/), dont il constitue une version condensée, simplifiée et adaptée au contexte de ce projet.
@@ -106,7 +108,7 @@ mkdocs new .
 
 La structure suivante devrait avoir été créée :
 
-```pgsql
+```psql
 .
 ├─ docs/
 │  └─ index.md
@@ -135,6 +137,8 @@ theme:
   name: material
 ```
 
+---
+
 ## Prévisualiser le site en local
 
 Maintenant que votre site est configuré, vous pouvez le générer et le visualiser localement en temps réel pendant que vous travaillez dessus.
@@ -157,6 +161,8 @@ Quand vous avez terminé, vous pouvez arrêter le serveur en appuyant dans le te
 
 === ":material-apple: macOS"
     Appuyer simultanément sur ++cmd+c++
+
+---
 
 ## Validation automatique du schéma YAML
 
@@ -185,6 +191,9 @@ Ajoutez le code suivant dans ce fichier :
   ]
 }
 ```
+
+---
+
 ## Publication
 
 Après avoir créé et personnalisé votre site en local, vous pouvez le mettre en ligne gratuitement avec GitHub Pages. Consultez la [section publication](../publish) pour savoir comment publier votre site pour la première fois, puis comment le mettre à jour facilement par la suite.
