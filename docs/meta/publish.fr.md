@@ -51,6 +51,17 @@ jobs:
       - run: mkdocs gh-deploy --force
 ```
 
+**Si vous utilisez le plugin `mkdocs-static-i18n` :**
+
+Dans la section `steps:` avant l’appel à `mkdocs gh-deploy` :
+
+```yaml title="ci.yml" hl_lines="3"
+steps:
+  - run: pip install mkdocs-material
+  - run: pip install mkdocs-static-i18n
+  - run: mkdocs gh-deploy --force
+```
+
 ---
 
 ## Déployer le site sur Github Pages

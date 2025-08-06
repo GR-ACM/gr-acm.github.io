@@ -24,6 +24,18 @@ plugins:
   - i18n
 ```
 
+Finally, if you have created a GitHub Actions workflow, for example using the `.github/workflows/ci.yml` file, make sure to add a command to install the required dependencies.
+See the [publishing section](../publish/#github-actions-configuration-file) for more information on creating this file.
+
+In the `steps:` section, before the call to `mkdocs gh-deploy`:
+
+```yaml title="ci.yml" hl_lines="3"
+steps:
+  - run: pip install mkdocs-material
+  - run: pip install mkdocs-static-i18n
+  - run: mkdocs gh-deploy --force
+```
+
 ### Structure and navigation
 
 ```psql
