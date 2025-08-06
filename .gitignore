@@ -1,4 +1,21 @@
-# Environnement virtuel
+# =========================
+# MkDocs et déploiement
+# =========================
+
+# Dossier généré automatiquement par MkDocs (site statique)
+site/
+
+# Cache généré par des plugins comme `privacy`
+.cache/
+
+# Dossier contenant le fichier de configuration
+mkdocs.yml
+
+# =========================
+# Environnement Python
+# =========================
+
+# Environnements virtuels
 .env
 .venv
 env/
@@ -7,35 +24,21 @@ ENV/
 env.bak/
 venv.bak/
 
-# Fichiers Python temporaires
+# Cache Python
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.pyc
 
-# MkDocs
-/site
-
-# Déploiement GitHub Pages
-*.DS_Store
-*.log
-
-# VSCode / VSCodium
-.vscode/
-.history/
-
-# Fichiers de sauvegarde d’éditeur
-*~
-*.swp
-*.bak
-*.tmp
-
-# Logs
+# Fichiers de log ou d’erreur pip
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Distribution / packaging
+# =========================
+# Packaging & distribution
+# =========================
+
 .Python
 build/
 develop-eggs/
@@ -55,3 +58,27 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# =========================
+# IDEs / Éditeurs
+# =========================
+
+# Visual Studio Code / VSCodium
+.vscode/
+.history/
+
+# Fichiers de sauvegarde ou temporaires d’éditeurs
+*~
+*.swp
+*.bak
+*.tmp
+
+# =========================
+# Système / fichiers inutiles
+# =========================
+
+# macOS
+.DS_Store
+
+# Fichiers log génériques
+*.log
