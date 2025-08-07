@@ -80,8 +80,11 @@ Initialisez un dépôt Git dans le dossier du projet à l'aide de cette commande
 git init
 ```
 
-Optionnellement, vous pouvez ajouter un fichier `.gitignore` à la racine de votre projet.  
-Le fichier `.gitignore` est un fichier spécial utilisé par Git pour lui dire quels fichiers ou dossiers il ne doit pas pousser sur GitHub.
+!!! tip "fichier `.gitignore`"
+    Optionnellement, vous pouvez ajouter un fichier `.gitignore` à la racine de votre projet.  
+    Le fichier `.gitignore` est un fichier spécial utilisé par Git pour lui dire quels fichiers ou dossiers il ne doit pas pousser sur GitHub.  
+    Pour en savoir plus, consultez [la page dédiée](/resources/gitignore/).
+    Vous pouvez également télécharger directement le fichier `.gitignore` de ce wiki depuis le dépôt GitHub.
 
 Ajoutez tous les fichiers modifiés ou nouveaux du dossier courant et de ses sous-dossiers à la zone de préparation avec la commande :
 
@@ -133,11 +136,11 @@ Félicitations, vous avez déployé votre site!
 
 Une fois vos modifications terminées, déployez à nouveau votre site avec la commande :
 
-!!! tip "Optionnel"
-  Si vous avez créé ou modifié votre fichier `.gitignore`, vous devrez supprimer les fichiers de l'index Git. Le fichier `.gitignore` empêche Git de suivre de nouveaux fichiers correspondants, mais n'a aucun effet sur les fichiers déjà suivis.
-  ```bash
-  git rm -r --cached .
-  ```
+??? tip "Si vous avez créé un fichier `.gitignore`"
+    Si vous avez créé ou modifié votre fichier `.gitignore`, vous devrez supprimer les fichiers de l'index Git. Le fichier `.gitignore` empêche Git de suivre de nouveaux fichiers correspondants, mais n'a aucun effet sur les fichiers déjà suivis.
+    ```bash
+    git rm -r --cached .
+    ```
 
 ```bash
 git add .
@@ -151,4 +154,39 @@ git commit -m "Mise à jour"
 git push origin main
 ```
 
-La nouvelle version est automatiquement publiée sur la branche `main` et sur la branche `gh-pages` de votre dépôt.
+La nouvelle version est automatiquement publiée sur la branche `main` et sur la branche `gh-pages` de votre dépôt.  
+Aucune autre action n’est nécessaire. Tant que votre dépôt est configuré pour être déployé depuis la branche `gh-pages`, votre site sera mis à jour automatiquement.
+
+---
+
+## Dépannage
+
+Voici quelques problèmes courants que vous pourriez rencontrer lors de la mise à jour ou du déploiement de votre site avec Git et MkDocs, ainsi que des solutions pour les résoudre.
+
+### Erreur : `failed to push some refs`
+
+Lors d'une mise à jour, vous pouvez rencontrer cette erreur :
+
+```bash
+git push origin main
+To https://github.com/utilisateur/mon-repo.git
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/utilisateur/mon-repo.git'
+hint: Updates were rejected because the remote contains work that you do not have locally.
+hint: This is usually caused by another repository pushing to the same ref.
+hint: If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+**Cause** : Vous essayez de pousser (`git push`) alors que des modifications existent déjà sur la branche distante `main`, par exemple si vous avez modifié un fichier directement sur GitHub (comme un `README.md`).
+
+**Solution** : Exécutez une commande `pull` pour récupérer les modifications distantes avant de pousser à nouveau :
+
+```bash
+git pull origin main --rebase
+git push origin main
+```
+
+!!! note "Que fait `--rebase` ?"
+    L’option `--rebase` permet d’éviter les commits de fusion inutiles en intégrant proprement les changements distants dans votre historique local.

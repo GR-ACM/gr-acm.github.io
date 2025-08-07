@@ -56,8 +56,9 @@ plugins:
           default: true
           nav:
             - Accueil: index.md
-            #- Wiki: under-construction.md
-            - Ressources: under-construction.md
+            - Wiki: under-construction.md
+            - Ressources:
+                - Fichier .gitignore: resources/gitignore.md
             - À propos:
                 - Présentation technique: meta/overview.md
                 - Installation initiale: meta/installation.md
@@ -70,8 +71,9 @@ plugins:
           build: true
           nav:
             - Home: index.md
-            #- Wiki: under-construction.md
-            - Resources: under-construction.md
+            - Wiki: under-construction.md
+            - Resources: 
+                - .gitignore file: resources/gitignore.md
             - About:
                 - Technical overview: meta/overview.md
                 - Installation: meta/installation.md

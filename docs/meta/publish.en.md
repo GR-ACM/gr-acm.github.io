@@ -78,8 +78,11 @@ Initialize a Git repository in the project folder using the terminal:
 git init
 ```
 
-Optionally, you can add a `.gitignore` file at the root of your project.
-The `.gitignore` file is used by Git to specify which files or folders should not be pushed to GitHub.
+!!! tip "`.gitignore` file"
+    Optionally, you can add a `.gitignore` file at the root of your project.
+    The `.gitignore` file is used by Git to specify which files or folders should not be pushed to GitHub.  
+    To learn more, see the [dedicated page](/en/resources/gitignore/).
+    You can also download this site's `.gitignore` file directly from the GitHub repository.
 
 Add all new or modified files in the current folder and its subfolders with:
 
@@ -129,25 +132,62 @@ Congratulations, your site is now live!
 
 ## Updating the Site
 
-After making your changes, redeploy your site with:
+Once your changes are complete, redeploy your site using the following commands:
+
+??? tip "If you added a `.gitignore` file"
+    If you've added or updated your .gitignore file, you may need to remove existing files from Git's index.
+    The .gitignore file prevents Git from tracking new matching files, but it doesn't remove those already tracked.
+    ```bash
+    git rm -r --cached .
+    ```
+
+Then stage and commit your changes:
 
 ```bash
-mkdocs gh-deploy
+git add .
 ```
-
-The new version will be published automatically to the gh-pages branch of your repository, updating your site.
-
-To delete the local `site/` folder before rebuilding the site, use:
 
 ```bash
-mkdocs gh-deploy --clean
+git commit -m "Mise à jour"
 ```
 
-This can be useful if:
+```bash
+git push origin main
+```
 
-- You have deleted or renamed pages
-- You want to ensure no obsolete files are kept in `site/`
+Your updated site will automatically be published to both the `main` and `gh-pages` branches of your repository.  
+No additional steps are needed. As long as your repository is configured to deploy from the `gh-pages branch`, your site will be updated automatically.
 
-!!! info
-    With `mkdocs gh-deploy`, this step is rarely necessary because MkDocs uses a temporary folder for deployment.
-    Use `--clean` only if you're unsure or after major structural changes.
+---
+
+## Troubleshooting
+
+Here are some common issues you might encounter when updating or deploying your site with Git and MkDocs, along with solutions to fix them.
+
+### Error : `failed to push some refs`
+
+While updating, you might see the following error:
+
+```bash
+git push origin main
+To https://github.com/utilisateur/mon-repo.git
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/utilisateur/mon-repo.git'
+hint: Updates were rejected because the remote contains work that you do not have locally.
+hint: This is usually caused by another repository pushing to the same ref.
+hint: If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+**Cause**: You're trying to push changes (`git push`) while the remote `main` branch already contains commits that are not in your local version — for example, if you edited a file directly on GitHub (like `README.md`).
+
+**Solution**: Run a `git pull` to retrieve the latest changes from the remote branch before pushing again:
+
+```bash
+git pull origin main --rebase
+git push origin main
+```
+
+!!! note "What does `--rebase` do?"
+    The `--rebase` option integrates the remote changes into your local history in a clean way, avoiding unnecessary merge commits.
