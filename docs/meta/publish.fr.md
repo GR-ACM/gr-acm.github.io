@@ -137,7 +137,7 @@ Félicitations, vous avez déployé votre site!
 Une fois vos modifications terminées, déployez à nouveau votre site avec la commande :
 
 ??? tip "Si vous avez créé un fichier `.gitignore`"
-    Si vous avez créé ou modifié votre fichier `.gitignore`, vous devrez supprimer les fichiers de l'index Git. Le fichier `.gitignore` empêche Git de suivre de nouveaux fichiers correspondants, mais n'a aucun effet sur les fichiers déjà suivis.
+    Si vous avez créé ou modifié votre fichier `.gitignore` entre deux mises à jour, vous devrez supprimer les fichiers de l'index Git. Le fichier `.gitignore` empêche Git de suivre de nouveaux fichiers correspondants, mais n'a aucun effet sur les fichiers déjà suivis.
     ```bash
     git rm -r --cached .
     ```

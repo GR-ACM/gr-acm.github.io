@@ -58,7 +58,11 @@ plugins:
             - Accueil: index.md
             - Wiki: under-construction.md
             - Ressources:
-                - Fichier .gitignore: resources/gitignore.md
+              - Git:
+                - Exclusion de fichiers dans un dépôt MkDocs: resources/git/gitignore.md
+              - Scripts:
+                - Intégration des métadonnées pour Archivematica et AtoM: resources/scripts/AtoM-METS-merger.md
+                - Injection des métadonnées dans AtoM: resources/scripts/AtoM-record-updater.md
             - À propos:
                 - Présentation technique: meta/overview.md
                 - Installation initiale: meta/installation.md
@@ -72,8 +76,12 @@ plugins:
           nav:
             - Home: index.md
             - Wiki: under-construction.md
-            - Resources: 
-                - .gitignore file: resources/gitignore.md
+            - Resources:
+              - Git:
+                - .gitignore file: resources/git/gitignore.md
+              - Scripts:
+                - Metadata Integration Package for Archivematica and AtoM: resources/scripts/AtoM-METS-merger.md
+                - Metadata injection in AtoM: resources/scripts/AtoM-record-updater.md
             - About:
                 - Technical overview: meta/overview.md
                 - Installation: meta/installation.md

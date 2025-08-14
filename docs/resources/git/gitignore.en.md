@@ -1,5 +1,21 @@
 # `.gitignore` file
 
+The `.gitignore` file tells Git which files or folders should **not** be tracked or included in your repository history.  
+It’s essential to prevent accidentally committing:
+
+- large or auto-generated files (e.g., `/site/`)
+- temporary or cache files (e.g., `__pycache__/`, `.DS_Store`)
+- sensitive or environment-specific files (e.g., `.env`)
+
+!!! tip "Reminder"
+    The `.gitignore` file prevents Git from tracking new matching files, but it doesn't remove those already tracked. If a file is already being tracked, updating the `.gitignore` won’t remove it.
+    You’ll need to untrack it manually with:
+    ```bash
+    git rm -r --cached .
+    git add .
+    git commit -m "Clean ignored files"
+    ```
+
 ```py
 # =========================
 # MkDocs and deployment

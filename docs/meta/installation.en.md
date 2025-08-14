@@ -66,10 +66,14 @@ python -m venv venv
 ### Activate the virtual environment
 
 === ":material-microsoft-windows: Windows"
-    Type `.\venv\Scripts\activate`
+    ```py
+    .\venv\Scripts\activate
+    ```
 
 === ":material-apple: macOS"
-    Type `source venv/bin/activate`
+    ```bash
+    source venv/bin/activate
+    ```
 
 !!! success "Activation"
     If successful, you’ll see the environment name `(venv)` appear at the start of your command line.
@@ -97,6 +101,8 @@ You can use the following command in your terminal (from the correct folder):
 ```bash
 code .
 ```
+
+If you opened the folder directly in Visual Studio Code or VSCodium, this step is not necessary.
 
 ### Initialize a new MkDocs site
 
