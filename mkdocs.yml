@@ -56,7 +56,7 @@ plugins:
           default: true
           nav:
             - Accueil: index.md
-            - Wiki: under-construction.md
+            - Wiki: wiki/under-construction.md
             - Ressources:
               - Git:
                 - Exclusion de fichiers dans un dépôt MkDocs: resources/git/gitignore.md
@@ -75,7 +75,7 @@ plugins:
           build: true
           nav:
             - Home: index.md
-            - Wiki: under-construction.md
+            - Wiki: wiki/under-construction.md
             - Resources:
               - Git:
                 - .gitignore file: resources/git/gitignore.md
