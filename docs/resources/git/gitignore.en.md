@@ -1,20 +1,34 @@
-# `.gitignore` file
+# Excluding Files in a MkDocs Repository
 
-The `.gitignore` file tells Git which files or folders should **not** be tracked or included in your repository history.  
-It’s essential to prevent accidentally committing:
+[:material-account: Muong, Kethsana](https://infoscience.epfl.ch/entities/person/894bf3c8-287b-4ae5-a1fb-63dd69db6e5d)  
+:material-calendar: August 2025  
+:material-office-building: Archives de la construction moderne – EPFL
 
-- large or auto-generated files (e.g., `/site/`)
+*This file is distributed under the GNU General Public License v3. You may redistribute and/or modify it under the terms of the GNU GPL as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.*  
+*This `.gitignore` file is provided as an example for projects using [MkDocs](https://www.mkdocs.org/) with the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. It includes common directories, temporary files, and build artifacts that should be excluded from Git tracking during site development and deployment.*  
+*To obtain a copy of the GNU General Public License, visit [www.gnu.org/licenses/](https://www.gnu.org/licenses/).*
+
+---
+
+## Purpose
+
+The `.gitignore` file tells Git which files or folders should **not** be tracked or included in the repository history.  
+It is essential to prevent accidentally committing:
+
+- large or automatically generated files (e.g., `/site/`)
 - temporary or cache files (e.g., `__pycache__/`, `.DS_Store`)
-- sensitive or environment-specific files (e.g., `.env`)
+- files containing sensitive information (e.g., `.env`)
 
 !!! tip "Reminder"
-    The `.gitignore` file prevents Git from tracking new matching files, but it doesn't remove those already tracked. If a file is already being tracked, updating the `.gitignore` won’t remove it.
-    You’ll need to untrack it manually with:
+    The `.gitignore` file prevents Git from tracking **new** matching files, but has no effect on files that are already tracked.  
+    If you add a rule after files are already committed, remove them from the index using:
     ```bash
     git rm -r --cached .
     git add .
-    git commit -m "Clean ignored files"
+    git commit -m "Clean ignored files from repository"
     ```
+
+## Sample `.gitignore` File
 
 ```py
 # =========================

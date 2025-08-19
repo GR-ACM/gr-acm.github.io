@@ -14,8 +14,8 @@
 
 Ce package automatise l’intégration des métadonnées générées par Archivematica (1.17.0) dans AtoM (2.8.2), en garantissant une synchronisation fluide et des mises à jour cohérentes entre les deux systèmes. Il fournit un flux de travail structuré pour :
 
-1.	Extraction et transformation des données : Fusion des métadonnées des fichiers METS (XML) générés par Archivematica avec les notices exportées d’AtoM (CSV).
-2.	Mise à jour automatisée des notices dans AtoM : Injection des métadonnées enrichies via des requêtes HTTP.
+1.	Extraction et transformation des données : fusion des métadonnées des fichiers METS (XML) générés par Archivematica avec les notices exportées d’AtoM (CSV).
+2.	Mise à jour automatisée des notices dans AtoM : injection des métadonnées enrichies via des requêtes HTTP.
 
 ---
 
@@ -23,15 +23,15 @@ Ce package automatise l’intégration des métadonnées générées par Archive
 
 **Scripts Python**
 
-- `AtoM_METS_Data_Merger.py` : Analyse et fusionne les métadonnées provenant de METS (Archivematica) et CSV (AtoM).
-- `AtoM_Record_Updater.py` : Met à jour les notices dans AtoM avec les métadonnées enrichies via l’interface web.
+- `AtoM_METS_Data_Merger.py` : analyse et fusionne les métadonnées provenant de METS (Archivematica) et CSV (AtoM).
+- `AtoM_Record_Updater.py` : met à jour les notices dans AtoM avec les métadonnées enrichies via l’interface web.
 
 **Fichiers de données**
 
-- `isad_0000000001.csv` : Fichier d’export AtoM contenant les notices existantes.
-- `METS_123456789.xml` : Fichier METS produit par Archivematica contenant les métadonnées structurées.
-- `login.csv` : Identifiants nécessaires pour accéder à l’interface web d’AtoM.
-- `urls.csv` : Liste des URLs ou des UUID nécessaires pour localiser ou synchroniser les données.
+- `isad_0000000001.csv` : fichier d’export AtoM contenant les notices existantes.
+- `METS_123456789.xml` : fichier METS produit par Archivematica contenant les métadonnées structurées.
+- `login.csv` : identifiants nécessaires pour accéder à l’interface web d’AtoM.
+- `urls.csv` : liste des URLs ou des UUID nécessaires pour localiser ou synchroniser les données.
 
 ---
 
@@ -39,15 +39,15 @@ Ce package automatise l’intégration des métadonnées générées par Archive
 
 - **Systèmes requis**
 
-    - Archivematica : Version 1.17.0, pour produire des fichiers METS.
-    - AtoM : Version 2.8.2
+    - Archivematica 1.17.0, pour produire des fichiers METS.
+    - AtoM 2.8.2
 
-- **Environnement Python, version 3.8+ avec les bibliothèques suivantes**
+- **Environnement Python 3.8+ avec les bibliothèques suivantes**
 
-    - pandas : Manipulation des fichiers CSV.
-    - xml.etree.ElementTree : Analyse des fichiers XML.
-    - requests : Gestion des requêtes HTTP.
-    - BeautifulSoup (bs4) : Navigation et interaction avec les formulaires web.
+    - pandas : manipulation des fichiers CSV.
+    - xml.etree.ElementTree : analyse des fichiers XML.
+    - requests : gestion des requêtes HTTP.
+    - BeautifulSoup (bs4) : navigation et interaction avec les formulaires web.
 
 ## Pourquoi ce script est nécessaire ?
 
@@ -64,7 +64,7 @@ Le fichier résultant `urls.csv` peut être utilisé par un second script pour i
 
 ## Étapes d'utilisation
 
-### Vérifier le nom du fichier METS
+### Vérifiez le nom du fichier METS
 
 Ouvrez le script et vérifiez que la variable contenant le nom du fichier METS correspond bien à votre fichier. Par défaut, cela pourrait ressembler à :
 
@@ -74,7 +74,9 @@ mets_filename = "METS_123456789.xml"
 
 Modifiez cette valeur si nécessaire.
 
-### Ouvrir l’invite de commande et se placer dans le bon dossier
+### Placez-vous dans le bon dossier
+
+Ouvrez l'invite de commande et placez-vous dans le bon dossier.
 
 ```bash
 cd "C:\Users\votre.nom\Chemin\Vers\Le\Dossier"
@@ -82,9 +84,9 @@ cd "C:\Users\votre.nom\Chemin\Vers\Le\Dossier"
 
 Ce dossier doit contenir :
 
-- le fichier METS
-- le fichier CSV AtoM
-- le script Python
+- Le fichier METS
+- Le fichier CSV AtoM
+- Le script Python
 
 ### Exécutez le script
 

@@ -78,7 +78,7 @@ plugins:
             - Wiki: wiki/under-construction.md
             - Resources:
               - Git:
-                - .gitignore file: resources/git/gitignore.md
+                - Excluding files in a MkDocs Repository: resources/git/gitignore.md
               - Scripts:
                 - Metadata Integration Package for Archivematica and AtoM: resources/scripts/AtoM-METS-merger.md
                 - Metadata injection in AtoM: resources/scripts/AtoM-record-updater.md
